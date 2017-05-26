@@ -2,6 +2,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: black;
 }
@@ -92,6 +96,20 @@ header>div>ul>li>img {
   width: 30px;
 }
 
+.hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 214px;
+  height: 1500px;
+  margin-top:  50px;
+  border-right: 1px solid orange;
+  border-top: 1px solid orange;
+  background: black;
+}
+
 #main {
   background: black;
   width: 1070px;
@@ -139,14 +157,14 @@ header>div>ul>li>img {
   transition: .350s all;
 }
 
-#main>div>ul>li>img {
+#main>div>ul>li> a img {
   height: 110px;
   width: 196px;
   margin: 0px;
   padding: 0px;
 }
 
-#main>div>ul>li> h4 {
+#main>div>ul>li> a h4 {
   color: orange;
   margin: 0px;
   padding: 0px;
@@ -154,14 +172,14 @@ header>div>ul>li>img {
 
 }
 
-#main>div>ul>li> h5 {
+#main>div>ul>li> a h5 {
   color: orange;
   margin: 0px;
   padding: 0px;
   font-size: 12px;
 }
 
-#main>div>ul>li> p {
+#main>div>ul>li> a p {
   margin: 0px;
   padding: 0px;
   width: 100%;
