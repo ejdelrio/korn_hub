@@ -1,3 +1,7 @@
+* {
+  font-family: Helvetica;
+}
+
 li {
   list-style: none;
 }
@@ -29,6 +33,7 @@ header {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .menu>img {
@@ -108,19 +113,54 @@ header>div>ul>li>img {
   border-right: 1px solid orange;
   border-top: 1px solid orange;
   background: black;
+  visibility: visible;
 }
+
+.hidden> *, .nav{
+  width: 160px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  color: orange;
+}
+
+.nav {
+  margin-left: 27px;
+  transition: .350s all;
+}
+
+.nav:hover {
+  background: orange;
+  color: black;
+}
+
+
+.nav>p {
+  margin: 0px;
+  border: 0px;
+  width: 140px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-family: Helvetica;
+  float: left;
+}
+
+
 
 #main {
   background: black;
-  width: 1070px;
+  width: 856px;
   height: 1500px;
   margin: auto;
   margin-top: 100px;
+  margin-left: 280px;
   border: 1px solid #1D1D1D;
 }
 
 #main>div {
-  width: 1070px;
+  width: 856px;
   height: 420px;
   outline: 1px solid #1D1D1D;
   margin: 0px;
@@ -130,7 +170,7 @@ header>div>ul>li>img {
 #main>div>h3 {
   margin: 0px;
   padding: 0px;
-  width: 1055px;
+  width: 841px;
   height: 20px;
   color: orange;
   background: #1D1D1D;
@@ -187,4 +227,9 @@ header>div>ul>li>img {
   color: orange;
   font-size: 10px;
   background: #1D1D1D;
+}
+
+ul>:nth-child(9), ul>:nth-child(10) {
+  visibility: hidden;
+  position: fixed;
 }
