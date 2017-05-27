@@ -193,15 +193,36 @@ padding-bottom: 5px;
 .container>ul>li {
   float: left;
   display: inline-block;
-  outline: 1px solid orange;
+  outline: 1px solid #222222;
   width: 196px;
   height: 174px;
   margin-left: 15px;
   margin-top: 20px;
 }
+.container>ul>li>* {
+  margin: 0px;
+  padding: 0px;
+  width: 196px;
+}
 
 .container>ul>li>img {
   height: 110px;
-  width: 196px;
   margin-bottom: 4px;
+  outline: 1px solid orange;
+}
+
+.container>ul>li>p {
+  font-size: 10px;
+  background: #222222;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container>ul>li>h5 {
+  font-size: 15px;
+  overflow: hidden
+}
+.container>ul>li>h6 {
+  margin-top: 5px;
+  overflow: hidden
 }

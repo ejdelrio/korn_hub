@@ -31,3 +31,10 @@ function unHide() {
 
 
 menu.addEventListener('click', toggle);
+
+var containers = document.getElementsByClassName('container');
+var parentList = containers[0].getElementsByTagName('ul');
+
+for (var i = 0; i < 10; i++) {
+  parentList[0].appendChild(allVids[i].display);
+}
